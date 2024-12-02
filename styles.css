@@ -1,0 +1,306 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo img {
+    height: 600px; /* Adjust the logo height to your preference */
+    width: 1522px;  /* Maintain the aspect ratio */
+  }
+  
+  /* Logo Styles */
+  .logo h1 {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Navigation Menu Styles */
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu li {
+    margin-right: 30px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .nav-menu a:hover {
+    color: red;
+  }
+  
+  /* Icons Styles */
+  .icons a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  .icons a:hover {
+    color: red;
+  }
+  
+  /* FontAwesome Icons (Make sure to include the FontAwesome CDN or install it in your project) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+  .product-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+  }
+
+/* Product Card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 200px;
+    height: 400px;
+    object-fit: contain;
+    border-image-width: 200px;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }  
+  
+  .product-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.3em;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .product-card:hover {
+    transform: scale(1.15); /* Slightly scale the product card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow for a lifted effect */
+  }
+
+  .nav-item:hover {
+    color: #e74c3c; /* Change color to red */
+    transform: scale(1.1); /* Slight zoom effect */
+    
+  }
+
+  .blog-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .blog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .blog-posts {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .blog-post {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .blog-info {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .blog-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .blog-info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-post:hover .blog-info {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-us {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #eb1515;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #f1a3a3;
+  }
+
+  .connect-with-us {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .brand-logo {
+    max-width: 150px; /* Controls the width of the logo */
+    max-height: 50px; /* Controls the height of the logo */
+    object-fit: contain; /* Ensures the logo doesn't stretch or distort */
+    margin-bottom: 15px;
+  }
+  
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.1);
+  }
+  
+  .instagram img {
+    background-color: #E4405F; /* Instagram color */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .linkedin img {
+    background-color: #0077B5; /* LinkedIn color */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .facebook img {
+    background-color: #3b5998; /* Facebook color */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .twitter img {
+    background-color: #1DA1F2; /* Twitter color */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  
